@@ -43,7 +43,7 @@ The dial centre is **(168, 240)**.
 
 Huawei watches only install signed `.hwt` packages. You can't make one by hand. You build it with Huawei's free **Theme Studio** (Watch Face Maker):
 
-1. Register as a theme designer at <https://developer.huawei.com/consumer/en/huawei-theme> and download **Theme Studio**.
+1. Sign in with a HUAWEI ID at [HUAWEI Developers – Themes](https://developer.huawei.com/consumer/en/huaweithemes/), apply for **certified designer (watch face)** ([registration guide](https://developer.huawei.com/consumer/en/doc/distribution/content/settlement-guidance-0000001056348857)), and download Theme Studio from [Downloading Development Tools](https://developer.huawei.com/consumer/en/doc/content/themes-design-tools-0000001054531194). Testing on a real watch requires a certified account.
 2. Create a new watch face project and choose **HUAWEI WATCH FIT 2** (336×480).
 3. **Background:** import `output/background.png`.
 4. **Pointers:** add hour, minute and second pointers. Import each `hand_*.png` and set its rotation centre to the pivot in the table above, at dial centre (168, 240).
