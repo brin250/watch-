@@ -39,6 +39,16 @@ Colours, sizes and the font are constants at the top of `generate.py`.
 
 The dial centre is **(168, 240)**.
 
+## Quick option: no designer account needed (Gallery face)
+
+`output/gallery_photo.jpg` is the dial with an empty capsule. Set it as a photo watch face:
+
+1. On an **Android** phone, open **HUAWEI Health** → **Devices** → your Watch Fit 2 → **Watch faces** → **More** → **Mine** → **Gallery**.
+2. Tap **+** → **Gallery**, choose `gallery_photo.jpg`, then **Save**.
+3. Under **Style** / **Position**, put the time in the **middle**, with a dark blue or black font.
+
+The watch draws the time digitally on top, so this version has no moving hands.
+
 ## Turning it into an installable face (.hwt)
 
 Huawei watches only install signed `.hwt` packages. You can't make one by hand. You build it with Huawei's free **Theme Studio** (Watch Face Maker):

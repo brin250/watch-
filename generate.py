@@ -189,7 +189,9 @@ def draw_moon_window(img):
                     fill=(240, 242, 246, 255), outline=SILVER, width=s(1))
 
 
-def background():
+def background(gallery=False):
+    """gallery=True leaves the capsule empty for the Health app's Gallery (photo) face,
+    which draws its own digital time and date on top."""
     img = radial_gradient(W, H, (255, 255, 255), (214, 219, 226), cy=H * 0.42, scale=0.95)
     # brushed/sunray texture: faint radial lines
     rays = canvas()
@@ -206,6 +208,11 @@ def background():
     draw_numerals(img, BLUE + (255,))
     img.alpha_composite(capsule_layer())
     d = ImageDraw.Draw(img)
+    if gallery:
+        draw_moon_window(img)
+        out = Image.new("RGBA", img.size, (0, 0, 0, 255))
+        out.paste(img, (0, 0), rounded_mask(W, H, DIAL_RADIUS))
+        return finish(out)
     # steps track + label
     draw_steps_track(d, (205, 212, 222))
     font = ImageFont.truetype(FONT_SANS, s(7))
@@ -286,6 +293,7 @@ def main():
 
     bg = background()
     bg.save(os.path.join(OUT, "background.png"))
+    background(gallery=True).convert("RGB").save(os.path.join(OUT, "gallery_photo.jpg"), quality=95)
     aod = aod_background()
     aod.save(os.path.join(OUT, "aod_background.png"))
     steps_progress().save(os.path.join(OUT, "steps_progress.png"))
