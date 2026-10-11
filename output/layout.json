@@ -1,0 +1,80 @@
+{
+  "screen": [
+    336,
+    480
+  ],
+  "dial_center": [
+    168.0,
+    240.0
+  ],
+  "hands": {
+    "hour": {
+      "file": "hand_hour.png",
+      "size": [
+        22,
+        92
+      ],
+      "pivot": [
+        11.0,
+        74
+      ],
+      "place_at": [
+        157.0,
+        166.0
+      ]
+    },
+    "minute": {
+      "file": "hand_minute.png",
+      "size": [
+        20,
+        136
+      ],
+      "pivot": [
+        10.0,
+        116
+      ],
+      "place_at": [
+        158.0,
+        124.0
+      ]
+    },
+    "second": {
+      "file": "hand_second.png",
+      "size": [
+        18,
+        158
+      ],
+      "pivot": [
+        9.0,
+        128
+      ],
+      "place_at": [
+        159.0,
+        112.0
+      ]
+    }
+  },
+  "widgets": {
+    "date_window": {
+      "box": [
+        142.0,
+        140.0,
+        194.0,
+        160.0
+      ],
+      "text": "WEEK + DAY, e.g. 'FRI 18'",
+      "color": "#122E5C"
+    },
+    "steps_arc": {
+      "file": "steps_progress.png",
+      "pil_box": [
+        124.0,
+        112.0,
+        212.0,
+        200.0
+      ],
+      "start_deg_from_12": -55,
+      "end_deg_from_12": 55
+    }
+  }
+}
