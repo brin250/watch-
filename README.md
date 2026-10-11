@@ -50,7 +50,7 @@ Huawei watches only install signed `.hwt` packages. You can't make one by hand. 
 5. **Date:** add a *week* and a *day* text element inside the date box at (142, 140) to (194, 160). Use the colour `#122E5C` and a size of about 9 px. You can also use the `weekdays/` and `digits/` image sets.
 6. **Steps (optional):** add a steps progress/arc widget with `steps_progress.png`. The arc is centred at (168, 156) with a radius of 44 and runs from −55° to +55°, measured clockwise from 12 o'clock.
 7. **AOD:** in the AOD tab, import `aod_background.png` and reuse the hour and minute hands.
-8. Use **Preview**, then **Test on device** to sideload the face onto your watch through the Health app. You'll need to register your device for testing in Theme Studio. When it's ready, export the `.hwt`.
+8. Check it in Theme Studio's preview, then export the `.hwt`. Copy it to your phone, sign in to the HUAWEI Health app (from AppGallery) with your certified designer HUAWEI ID, and install it on the paired watch as a test watch face.
 
 > Huawei changes Theme Studio's menu names and its device-testing process from time to time. If a step above doesn't match what you see, follow the current Theme Studio documentation.
 
